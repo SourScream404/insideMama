@@ -9,7 +9,6 @@ headerMenu.classList.toggle('header-menu-open');
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     loop: true,
-    centeredSlides: true,
     grabCursor: true,
     pagination: {
       el: '.swiper-pagination',
@@ -21,8 +20,24 @@ const swiper = new Swiper('.swiper', {
   });
 
   const recomendedSwiper = new Swiper('.recomendedSwiper', {
-    slidesPerView: 3,
-    loop: false,
-    centeredSlides: true,
+    slidesPerView: 2,
+    enabled: false,
     grabCursor: true,
+    spaceBetween: 20,
+    breakpoints: {
+      1730: {
+        slidesPerView: 3,
+      },
+      500: {
+        enabled: true,
+        slidesPerView: 3,
+      }
+    }
+  });
+
+  const popularSwiper = new Swiper('.popularSwiper', {
+    slidesPerView: "auto",
+    freeMode: true,
+    grabCursor: true,
+    spaceBetween: 20,
   });
