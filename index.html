@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside mama</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="icon.ico" type="ico">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="header-logo">
+                    <a href="/">
+                    <img class="header-logo-image" 
+                src="./images/Logo.svg"
+                alt="Логотип"
+                >
+                </div>    
+                </a>
+                <nav class="header-menu">
+                <ul class="header-menu-list">
+                    <li class="header-menu-item">
+                        <a href="/">Курсы</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a href="/">Расписание</a>
+                    </li>
+                    <li class="header-menu-item burger-menu-item">
+                        <a href="/">Истории родов</a>
+                    </li>
+                    <li class="header-menu-item burger-menu-item">
+                        <a href="/">Фотографии</a>
+                    </li>                                 
+                    <li class="header-menu-item hide-on-mobile">
+                        <div class="dropdown">
+                            <a class="dropbtn" href="/">Полезное</a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-content-list">
+                                    <a class="dropdown-content-item" href="/">Истории родов</a>
+                                    <a class="dropdown-content-item" href="/">Фотографии</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-menu-item">
+                        <a href="/">Стоимость</a>
+                    </li>
+                    <li class="header-menu-item burger-menu-item">
+                        <a href="/">Наши площадки</a>
+                    </li> 
+                    <li class="header-menu-item burger-menu-item">
+                        <a href="/">Команда Inside</a>
+                    </li> 
+                    <li class="header-menu-item burger-menu-item">
+                        <a href="/">Контакты</a>
+                    </li> 
+                    <li class="header-menu-item hide-on-mobile">
+                        <div class="dropdown">
+                            <a class="dropbtn" href="/">О компании</a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-content-list">
+                                    <a class="dropdown-content-item" href="/">Наши площадки</a>
+                                    <a class="dropdown-content-item" href="/">Команда Inside</a>
+                                    <a class="dropdown-content-item" href="/">Контакты</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="burger-social-links">
+                        <ul class="burger-social-list">
+                            <li class="burger-social-item">
+                                <a href="#" class="burger-social-link"><img src="./images/telegram.svg" alt=""></a>
+                            </li>
+                            <li class="burger-social-item">
+                                <a href="#" class="burger-social-link"><img src="./images/instagram.svg" alt=""></a>
+                            </li>
+                            <li class="burger-social-item">
+                                <a href="#" class="burger-social-link"><img src="./images/vk.svg" alt=""></a>
+                            </li>
+                            <li class="burger-social-item">
+                                <a href="#" class="burger-social-link"><img src="./images/whatsapp.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                </nav>
+                
+            </div>
+                <div class="header-right">
+                    <div class="header-contact">
+                        <a class="number" href="tel:+78126427150">+7 (812) 642-71-50   
+                        </a>
+                        <p class="shedule"> Мы онлайн с <time datetime="9:00">9:00</time> 
+                            до <time datetime="22:00">22:00</time>
+                        </p>
+                    </div>
+                    <div class="header-buttons">
+                        <div class="header-search">
+                            <form class="header-search-button">
+                                <button class="button">
+                                    <img src="./images/Search.svg"
+                                    alt="search"
+                                    >
+                                </button>
+                            </form>
+                        </div>
+                            <div class="dropdown">
+                                <div class="header-chat">
+                                    <form class="header-chat-button dropbtn">
+                                        <button class="button">
+                                            <img src="./images/Chat.svg"
+                                            alt="chat"
+                                            >
+                                        </button>
+                                    </form>
+                                </div>                                   
+                                <div class="dropdown-content">
+                                    <div class="dropdown-content-list">
+                                        <a class="dropdown-content-item arrow" href="/"><img src="./images/telegram.svg">Telegram</a>
+                                        <a class="dropdown-content-item arrow" href="/"><img src="./images/instagram.svg">Instagram</a>
+                                        <a class="dropdown-content-item arrow" href="/"><img src="./images/vk.svg">Вконтакте</a>
+                                        <a class="dropdown-content-item arrow" href="/"><img src="./images/whatsapp.svg">WhatsApp</a>  
+                                    </div>                                     
+                                </div>
+                            </div>
+                            <div class="header-login">
+                                <form class="header-login-button">
+                                    <button class="button">
+                                        Войти
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="header-courses courses">
+                                <form class="header-courses-button">
+                                    <button class="button">
+                                Выбрать курс
+                                    </button>                
+                                </form>
+                            </div>
+                            <button class="button button-burger">
+                                <span></span>
+                            </button>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main>
+        <div class="main-wraper">
+            <section>
+                <div class="title-section-wrapper">
+                    <h1 class="title-section">Правда полезные
+                        курсы для <span>беременных</span> 
+                     </h1>
+                     <p class="title-section">а так же<br>
+                        их близких</p> 
+                </div>
+            </section>
+            <section>
+                <div class="online-section-wrapper">
+                    <div class="online-desc">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="online-desc-text">
+                                        <h2>
+                                            Online занятия <br> c заботой о     маме
+                                        </h2>
+                                        <p>Подготовка к родам, уход за  новорожденным, 
+                                            психология развития, неотложная     помощь и 
+                                            многое другое
+                                        </p>
+                                    </div>    
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="online-desc-text">
+                                        <h2>
+                                            Слайд №2
+                                        </h2>
+                                        <p>Пробую делать слайдер с помощью либы Swiper.js
+                                        </p>
+                                    </div>   
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="online-desc-text">
+                                        <h2>
+                                            Слайд №3
+                                        </h2>
+                                        <p>Пробую делать слайдер с помощью либы Swiper.js
+                                        </p>
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                                            
+                        <div class="online-button-container">
+                            <form class="online-section-button">
+                                <button class="main-button">
+                            Подробнее
+                                </button>                
+                            </form>
+                        </div>
+                    </div>
+                    <div class="online-section-image">
+                        <img src="./images/online_image.jpg"
+                        alt="pregnant woman"
+                        >
+                    </div>
+                </div>            
+            </section>
+            <section>
+                <div class="recomended">
+                    <h2 class="recomended-title">Наши подборки</h2>
+                    <div class="recomended-list recomendedSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="card mama swiper-slide">
+                                <h3 class="card-title">Маме <br> и ребёнку</h3>
+                                <div class="courses">
+                                    <form class="header-courses-button">
+                                        <button class="button">
+                                    Посмотреть
+                                        </button>                
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card family swiper-slide">
+                                <h3 class="card-title">Для всей семьи</h3>
+                                <div class="courses">
+                                    <form class="header-courses-button">
+                                        <button class="button">
+                                    Посмотреть
+                                        </button>                
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card guides swiper-slide">
+                                <h3 class="card-title">Семинары
+                                    и гайды</h3>
+                                <div class="courses">
+                                    <form class="header-courses-button">
+                                        <button class="button">
+                                    Посмотреть
+                                        </button>                
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+            <section>
+                <div class="popular">                    
+                    <h2 class="popular-title">Курсы на популярные темы</h2>
+                    <div class="popular-content">
+                        <div class="popular-card">
+                            <div class="popular-card-image">
+                                <img src="./images/popular1.jpg"
+                                alt="meditating woman"
+                                >
+                                <div class="image-bar">
+                                    <div class="image-tag-block">
+                                        <div class="tag image-tag image-tag-blur">Спикеры</div>
+                                            <div class="image-main-tag">
+                                                <div class="tag image-tag">Офлайн встреча</div>
+                                                <div class="tag image-tag">4-6 месяцев</div>
+                                            </div> 
+                                    </div>
+                                    <div class="image-like">
+                                        <input type="checkbox" id="checkbox_like1">
+                                        <label for="checkbox_like1"></label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="popular-card-text">                            
+                                    <h3 class="popular-text-title">
+                                        Аудио-медитации во время родов
+                                    </h3>                            
+                                <div class="popular-desc">
+                                    <p>Узнайте как аудио–медитации помогают 
+                                        во время родов, а также послушайте 
+                                        истории женщин из первых уст</p>
+                                </div>
+                                <div class="popular-tag-block">
+                                    <div class="tag popular-tag">Роды</div>
+                                    <div class="tag popular-tag">Медитация</div>
+                                    <div class="tag popular-tag">Сторителлинг</div>
+                                </div>                                 
+                            </div>
+                        </div>
+                        <div class="popular-card">
+                            <div class="popular-card-image">
+                                <img src="./images/popular2.jpg"
+                                alt="child"
+                                >
+                                <div class="image-bar">
+                                    <div class="image-tag-block">
+                                        <div class="tag image-tag image-tag-blur">Спикеры</div>
+                                        <div class="image-main-tag">
+                                            <div class="tag image-tag">Офлайн встреча</div>
+                                            <div class="tag image-tag">4 часа</div> 
+                                        </div>
+                                    </div>
+                                    <div class="image-like">
+                                        <input type="checkbox" id="checkbox_like2">
+                                        <label for="checkbox_like2"></label>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="popular-card-text"> 
+                                    <h3 class="popular-text-title">
+                                        Основы развития ребёнка
+                                    </h3>                            
+                                <div class="popular-desc">
+                                    <p>Расскажем как ребёночек растёт 
+                                    и как поступать на каждой стадии роста</p>
+                                </div>
+                                <div class="popular-tag-block">
+                                    <div class="tag popular-tag">Рзвитие детей</div>
+                                    <div class="tag popular-tag">Подготовка мамы</div>                          
+                                </div>                       
+                            </div>
+                        </div>
+                        <div class="popular-card">
+                            <div class="popular-card-image popular-card-image-small">
+                                <img src="./images/popular3.jpg"
+                                alt="playing kid"
+                                >
+                                <div class="image-bar">
+                                    <div class="image-tag-block">
+                                        <div class="image-main-tag"> 
+                                            <div class="tag image-tag">Гайд</div>                                
+                                            <div class="tag image-tag">15 минут</div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="image-like">
+                                        <input type="checkbox" id="checkbox_like3">
+                                        <label for="checkbox_like3"></label>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="popular-card-text">                            
+                                    <h3 class="popular-text-title popular-text-title-small">
+                                        Игрушки с рождения <br> и до 3-ёх лет
+                                    </h3>                            
+                                <div class="popular-desc">
+                                    <p>Какие игрушки давать ребёнку, 
+                                        а главное — зачем?</p>
+                                </div>
+                                <div class="popular-tag-block">
+                                    <div class="tag popular-tag">Воспитание</div>
+                                    <div class="tag popular-tag">Развитие детей</div>  
+                                </div>
+                                                         
+                            </div>
+                        </div>
+                        <div class="popular-card">
+                            <div class="popular-card-image popular-card-image-small">
+                                <img src="./images/popular4.jpg"
+                                alt="child and mother"
+                                >
+                                <div class="image-bar">                                     
+                                    <div class="image-tag-block">
+                                        <div class="image-main-tag">
+                                            <div class="tag image-tag">Гайд</div>                                
+                                            <div class="tag image-tag">35 минут</div>  
+                                        </div>                                                                              
+                                    </div>
+                                    <div class="image-like">
+                                        <input type="checkbox" id="checkbox_like4">
+                                        <label for="checkbox_like4"></label>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="popular-card-text">                            
+                                    <h3 class="popular-text-title popular-text-title-small">
+                                        Самостоятельный малыш или 
+                                        как не ограничивать ребёнка
+                                    </h3>                            
+                                <div class="popular-desc">
+                                    <p>Какие игрушки давать ребёнку, 
+                                        а главное — зачем?</p>
+                                </div>
+                                <div class="popular-tag-block">
+                                    <div class="tag popular-tag">Воспитание</div>
+                                    <div class="tag popular-tag">Контроль</div>  
+                                </div>
+                                                         
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="popular-buttons">
+                        <div class="popular-courses popular-button">
+                            <form class="header-courses-button">
+                                <button class="main-button">
+                            <p>Посмотреть все</p>
+                                </button>                
+                            </form>
+                        </div>
+                        <div class="arrows-button">
+                            <div class="arrow-box">
+                                <button class="button arrow-left"></button>
+                            </div>
+                            <div class="arrow-box">
+                                <button class="button arrow-right"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+               <div class="features">
+                    <div class="features-text">
+                        <h2 class="features-title">Готовность к материнству начинается здесь</h2>
+                        <p class="features-desc">Наши уникальные курсы помогут освоить необходимые навыки и подготовиться к переменам</p>
+                    </div>                    
+                    <div class="features-box">
+                        <div class="features-item">
+                            <button class="button features-button">
+                                <img src="./images/Heart.svg" alt="">
+                            </button>
+                            <div class="feature-item-desc">
+                                <h3 class="features-item-title">Индивидуальный подход</h3>
+                                <p class="features-item-text">Предоставляем персонализированное обучение на основе ваших интересов</p>                                
+                            </div>
+                        </div>
+                        <div class="features-item">
+                            <button class="button features-button">
+                                <img src="./images/Category.svg" alt="">
+                            </button>
+                            <div class="feature-item-desc">
+                                <h3 class="features-item-title">Комплексный подход</h3>
+                                <p class="features-item-text">Физические, практические и психологические навыки вместе</p>                                
+                            </div>
+                        </div>
+                        <div class="features-item">
+                            <button class="button features-button">
+                                <img src="./images/User.svg" alt="">
+                            </button>
+                            <div class="feature-item-desc">
+                                <h3 class="features-item-title">Поддержка сообщества</h3>
+                                <p class="features-item-text">Встречайтесь с другими беременными и делитесь опытом</p>                                
+                            </div>
+                        </div>
+                        <div class="features-item">
+                            <button class="button features-button">
+                                <img src="./images/Star.svg" alt="">
+                            </button>
+                            <div class="feature-item-desc">
+                                <h3 class="features-item-title">Экспертное руководство</h3>
+                                <p class="features-item-text">Профессионалы с богатым опытом помогут вам на каждом шаге</p>                                
+                            </div>
+                        </div>
+                    </div> 
+               </div>               
+            </section>
+            <section>
+                <div class="team">
+                    <div class="team-header">
+                        <h2 class="team-title">Наша команда</h2>
+                    <div class="arrows-button">
+                        <div class="arrow-box">
+                            <button class="button arrow-left"></button>
+                        </div>
+                        <div class="arrow-box">
+                            <button class="button arrow-right"></button>
+                        </div>
+                    </div>                    
+                    </div>
+                    <div class="team-box">
+                        <div class="team-item">
+                            <div class="image-box">
+                                <img src="./images/team1.jpg" alt="" class="team-img">
+                                <div class="tag team-tag">Воспитатель</div>
+                            </div>                            
+                            <h3 class="team-name">Анна Соловьёва</h3>
+                            <p class="team-desc">Создаёт, адаптирует и улучшает методологии воспитания детей</p>
+                        </div>
+                        <div class="team-item">
+                            <div class="image-box">
+                                <img src="./images/team2.jpg" alt="" class="team-img">
+                                <div class="tag team-tag">Бизнес аналитик</div>
+                            </div>                            
+                            <h3 class="team-name">Ксения Васнецова</h3>
+                            <p class="team-desc">Поддерживает высочайший уровень качества услуг на рынке</p>
+                        </div>
+                        <div class="team-item">
+                            <div class="image-box">
+                                <img src="./images/team3.jpg" alt="" class="team-img">
+                                <div class="tag team-tag">Креативный директор</div>
+                            </div>                            
+                            <h3 class="team-name">Ирина Петровская</h3>
+                            <p class="team-desc">Задаёт основные принципы работы и позиционирования бренда Inside</p>
+                        </div>
+                        <div class="team-item">
+                            <div class="image-box">
+                                <img src="./images/team4.jpg" alt="" class="team-img">
+                                <div class="tag team-tag">Нутрициолог</div>
+                            </div>                            
+                            <h3 class="team-name">Виктория Алексеева</h3>
+                            <p class="team-desc">Разрабатывает сбалансированные 
+                                и полезные рационы для мам и детей</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="quiz">
+                    <div class="quiz-banner">
+                        <div class="quiz-text">
+                            <h2 class="quiz-title">Покажем  курсы, которые подойдут <span>именно вам</span></h2>
+                            <p class="quiz-desc">Всё просто, надо всего-лишь ответить на несколько вопросов, а мы покажем те курсы, которые могут вас заинтересовать</p>
+                        </div>                        
+                    </div>
+                    <div class="quiz-form">
+                        <div class="quiz-inner">
+                            <p class="quiz-page"><span>1</span>/5</p>
+                            <p class="quiz-question">Чем вы хотите заняться?</p>
+                            <div class="quiz-variant">
+                                <form class="quiz-variant-item" action="">
+                                    <input type="checkbox" id="checkbox-1">
+                                    <label class="button quiz-button" for="checkbox-1">Консультация</label>
+                                </form>
+                                <form class="quiz-variant-item" action="">
+                                    <input type="checkbox" id="checkbox-2">
+                                    <label class="button quiz-button" for="checkbox-2">Фитнес</label>
+                                </form>
+                                <form class="quiz-variant-item " action="">
+                                    <input type="checkbox" id="checkbox-3">
+                                    <label class="button quiz-button" for="checkbox-3">Йога</label>
+                                </form>
+                                <form class="quiz-variant-item" action="">
+                                    <input type="checkbox" id="checkbox-4">
+                                    <label class="button quiz-button" for="checkbox-4">Аквааэробика</label>
+                                </form>
+                                <form class="quiz-variant-item" action="">
+                                    <input type="checkbox" id="checkbox-5">
+                                    <label class="button quiz-button" for="checkbox-5">Танцы</label>
+                                </form>
+                            </div>
+                            <div class="popular-courses popular-button">
+                                <form class="header-courses-button">
+                                    <button class="main-button quiz-button">
+                                Продолжить
+                                    </button>                
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="FAQ">
+                    <h2 class="FAQ-title">Частые вопросы</h2>
+                    <div class="FAQ-list">
+                        <div class="FAQ-item-box">
+                            <details class="FAQ-item">
+                                <summary class="FAQ-question">
+                                    Кому подходят ваши курсы ?
+                                </summary>
+                                <p class="FAQ-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </details>
+                            <details class="FAQ-item">
+                                <summary class="FAQ-question">
+                                    Где проводятся занятия?
+                                </summary>
+                                <p class="FAQ-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </details>
+                            <details class="FAQ-item">
+                                <summary class="FAQ-question">
+                                    У меня есть инвалидность, что делать?
+                                </summary>
+                                <p class="FAQ-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </details>
+                        </div>
+                        <div class="FAQ-item-box">
+                            <details class="FAQ-item">
+                                <summary class="FAQ-question">
+                                    Бывают ли противопоказания?
+                                </summary>
+                                <p class="FAQ-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </details>
+                            <details class="FAQ-item">
+                                <summary class="FAQ-question">
+                                    Есть ли скидки?
+                                </summary>
+                                <p class="FAQ-answer">Lorem ipsum odor amet, consectetuer adipiscing elit. Mus sem mauris nisl nascetur quis praesent. Nibh vestibulum dapibus mi, pulvinar iaculis per euismod fringilla. Cubilia ut tellus risus finibus aptent commodo fermentum.</p>
+                            </details>
+                            <details class="FAQ-item">
+                                <summary class="FAQ-question">
+                                    Делаете ли индивидуальные занятия?
+                                </summary>
+                                <p class="FAQ-answer">Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+                            </details>
+                        </div>                        
+                        <div class="FAQ-item-box">
+                            <details class="FAQ-item">
+                                <summary class="FAQ-question">
+                                    Бывают ли групповые занятия?
+                                </summary>
+                                <p class="FAQ-answer">Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+                            </details>
+                            <details class="FAQ-item">
+                                <summary class="FAQ-question">
+                                    Есть ли рекомендации к питанию?
+                                </summary>
+                                <p class="FAQ-answer">Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra ullamcorper tincidunt purus phasellus diam fermentum ultricies nam. Integer litora proin, libero tortor natoque cubilia dictumst.</p>
+                            </details>
+                            <details class="FAQ-item">
+                                <summary class="FAQ-question">
+                                    Какие споcобы оплаты принимаете?
+                                </summary>
+                                <p class="FAQ-answer">Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+                            </details>
+                        </div>                    
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="social">
+                    <div class="social-text">
+                        <h2 class="social-title">Мы есть в соцсетях,
+                            присоединяйтесь!
+                        </h2>
+                        <p class="social-desc">Каждый день мы выкладываем много полезной информации, делимся интересным инсайтами и поддерживаем вас                            
+                        </p>
+                    </div>
+                    <div class="social-list">
+                        <div class="social-item">
+                            <a class="social-link" href="/"> <img src="./images/telegram.svg" alt=""> Telegram</a>
+                        </div>
+                        <div class="social-item">
+                            <a class="social-link" href="/"><img src="./images/instagram.svg" alt="">Instagram</a>
+                        </div>
+                        <div class="social-item">
+                            <a class="social-link" href="/"><img src="./images/youtube.svg" alt="">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>        
+    </main>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="./images/footer-Logo.svg" alt="" width="147" height="64">
+            </div>
+            <p class="footer-mail">© 2023 Insidemama.ru <br>
+                Все права защищены</p>
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">
+                        <a href="/">Курсы</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="/">Расписание</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="/">Стоимость</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="/">Наши площадки</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="/">Истории родов</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="/">Фотографии</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="/">Команда Inside</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="/">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-info">
+                <a href="mailto:info@insidemama.ru">info@insidemama.ru</a>
+                <a href="tel:+78126427150">+7 (812) 642-71-50</a>
+                <p class="footer-shedule">Мы онлайн с 9:00 до 22:00</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>   
